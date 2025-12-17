@@ -2,6 +2,7 @@ import { Menu, Phone, Mail, ChevronDown } from "lucide-react";
 import { Button } from "./ui/button";
 import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
+import logo from "../../assets/logo.png";
 
 const services = [
   { name: "ABA Therapy", path: "/services/aba" },
@@ -53,9 +54,7 @@ export function Header() {
         {/* Main navigation */}
         <div className="flex items-center justify-between py-4">
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-lg">
-              <span className="text-2xl">🎯</span>
-            </div>
+            <img src={logo} alt="AIM Pediatric Logo" className="w-12 h-12 rounded-full object-cover shadow-lg" />
             <div>
               <h1 className="text-xl font-bold text-primary">AIM Pediatric</h1>
               <p className="text-xs text-muted-foreground">Therapy & Development</p>
