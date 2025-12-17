@@ -1,5 +1,6 @@
 import { Heart } from "lucide-react";
 import { Link } from "react-router-dom";
+import logo from "../../assets/logo.png";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -11,9 +12,7 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-                <span className="text-xl">🎯</span>
-              </div>
+              <img src={logo} alt="AIM Pediatric Logo" className="w-10 h-10 rounded-full object-cover" />
               <div>
                 <h3 className="font-bold text-primary">AIM Pediatric</h3>
                 <p className="text-xs text-muted-foreground">Therapy & Development</p>
