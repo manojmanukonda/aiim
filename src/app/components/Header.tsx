@@ -2,7 +2,7 @@ import { Menu, Phone, Mail, ChevronDown } from "lucide-react";
 import { Button } from "./ui/button";
 import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import logo from "figma:asset/232266ce1484d4a578bc4fea5f0de43174e720d9.png";
+import logo from "@/assets/logo.svg";
 
 const services = [
   { name: "ABA Therapy", path: "/services/aba" },

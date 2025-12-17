@@ -1,6 +1,6 @@
 import { Heart } from "lucide-react";
 import { Link } from "react-router-dom";
-import logo from "figma:asset/232266ce1484d4a578bc4fea5f0de43174e720d9.png";
+import logo from "@/assets/logo.svg";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
